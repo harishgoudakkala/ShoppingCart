@@ -98,48 +98,9 @@ npm run dev
 
 Default frontend: `http://localhost:5173`.
 
-Vite proxies `/api` to `http://localhost:5000` during local development.
-
 ## Production build
 
 ```bash
 cd frontend
 npm run build
 ```
-
-## Deployment
-
-### Backend
-
-A Node-compatible service such as Render can run:
-
-```text
-Root directory: backend
-Build command: npm install
-Start command: npm start
-```
-
-Set `DATABASE_URL`, `FRONTEND_URL`, and `PORT` as environment variables.
-
-### Frontend
-
-A service such as Vercel can run:
-
-```text
-Root directory: frontend
-Build command: npm run build
-Output directory: dist
-```
-
-Set `VITE_API_URL` to the deployed API base URL, including `/api` if you use an absolute API URL.
-
-## Suggested demo walkthrough
-
-1. Open `/products` and show the product catalogue.
-2. Open a product's unique URL.
-3. Switch color and storage and show price/gallery/EMI options updating from the API.
-4. Cycle through the image gallery.
-5. Select a no-cost or regular EMI plan.
-6. Open DevTools → Network and show the product API response containing a backend-calculated `monthlyPayment`.
-7. Show PostgreSQL tables and explain that the database stores EMI rules rather than the derived monthly amount.
-8. Show `db/schema.sql`, `backend/src/server.js`, `backend/src/seed.js` and this README.
