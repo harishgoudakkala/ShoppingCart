@@ -1,6 +1,6 @@
-# 1Fi SDE1 Assignment — EMI Product Store
+# Smart Store — EMI Product Store
 
-A full-stack React + Express + PostgreSQL implementation of the 1Fi SDE1 assignment.
+A full-stack React + Express + PostgreSQL implementation of the Smart Store.
 
 ## Included features
 
